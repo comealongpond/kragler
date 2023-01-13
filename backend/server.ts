@@ -7,11 +7,10 @@ for await (const conn of server) {
 async function serveHttp(conn: Deno.Conn) {
 	const httpConn = Deno.serveHttp(conn);
 
-	const file = await Deno.readFile("./index.html");
 
 	for await (const requestEvent of httpConn) {
 		requestEvent.respondWith(
-			new Response(file, {
+			new Response("Server is running", {
 				status: 200
 			}),
 		);

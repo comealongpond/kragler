@@ -6,9 +6,7 @@
 ## BE
 ### Deno
 ### PostgreSQL
-### (TypeScript)
 
 ## FE
-### Svelte 
-### TypeScript
+### Svelte (TS)
 
